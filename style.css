@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+*::-moz-selection {
+  color: #e76f51;
+  background: #e9c46a;
+}
+
+*::selection { 
+  color: #e76f51;
+  background: #e9c46a;
+}
+
 html {
   font-size: 62.5%;
   font-family: Helvetica;
@@ -47,7 +57,7 @@ html {
   grid-area: h;
   justify-self: center;
   align-self: center;
-  animation-delay: 0.7s;
+  animation-delay: 0.4s;
   text-align: center;
 }
 
@@ -68,12 +78,12 @@ html {
   font-size: 15rem;
   margin-right: 20rem;
   grid-area: f;
-  animation-delay: 1.2s;
+  animation-delay: 0.8s;
 }
 
 .container p:nth-of-type(3) {
   grid-area: f;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
 }
 
 img {
@@ -332,7 +342,7 @@ main p:last-child {
 }
 
 .github a:hover {
-  color: #003049;
+  color: #e76f51;
 }
 
 /* div contact */
@@ -348,11 +358,21 @@ main p:last-child {
   align-items: center;
 }
 
-.contact p {
+.contact a {
   margin: 1rem;
+  text-decoration: none;
+  color: #003049;
+  transition: ease-in-out 2s;
 }
 
+.contact a:hover {
+  color: #e76f51;
+}
+
+
+/* footer */
 footer {
+  margin-top: 4rem;
   max-width: 100vw;
   background-color: #003049;
   color: #f3f3f3;
