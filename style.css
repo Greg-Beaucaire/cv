@@ -21,6 +21,12 @@ html {
   font-family: Helvetica;
 }
 
+img {
+  width: 5rem;
+  height: auto;
+  margin: 2rem;
+}
+
 .container {
   font-family: "Bebas Neue", cursive;
   height: 100vh;
@@ -84,12 +90,6 @@ html {
 .container p:nth-of-type(3) {
   grid-area: f;
   animation-delay: 0.3s;
-}
-
-img {
-  width: 5rem;
-  height: auto;
-  margin: 2rem;
 }
 
 main {
@@ -254,6 +254,7 @@ main p:last-child {
 .experience > div > p {
   margin-bottom: 4rem;
   color: #003049;
+  text-align: justify;
 }
 
 /* div formation */
